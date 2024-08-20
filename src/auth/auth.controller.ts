@@ -86,4 +86,8 @@ export class AuthController {
       });
     }
   }
+  @Get('/ping')
+  async ping() {
+    return 'ping';
+  }
 }
