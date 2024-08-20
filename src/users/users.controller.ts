@@ -14,3 +14,12 @@ export class UsersController {
     return this.usersService.getUserById(id);
   }
 }
+
+@Controller('/')
+export class RootController {
+  constructor() {}
+  @Get('/')
+  handleRoot() {
+    return 'index';
+  }
+}
